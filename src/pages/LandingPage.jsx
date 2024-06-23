@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Button } from '../components/Button';
 import { Post } from '../components/post/Post';
 
 export function LandingPage() {
@@ -43,8 +44,8 @@ export function LandingPage() {
     }
 
     return (
-        <>
-            <button onClick={handleOrderChange}>Ordenar por ordem cronológica</button>
+        <>           
+            <Button onClick={handleOrderChange} className='Button-order'>Ordenar por ordem cronológica</Button>
             <main>
                 {posts.map((p) => (
                     <Post post={p} key={p.id} />
