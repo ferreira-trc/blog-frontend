@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Home",
+        "url": "/home"
+    },
+
+    {
+        "name": "All Post",
+        "url": "/allpost"
+    },
+    
+    {
+        "name": "My Profile",
+        "url": "/myprofile"
+    },
+
+    {
+        "name": "Logout",
+        "url": "/logout"
+    }
+]
