@@ -6,7 +6,7 @@ export function LandingPage() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [order, setOrder] = useState('default'); // Estado para controle da ordenação
+    const [order, setOrder] = useState('default'); 
 
     const fetchPosts = async (order = 'default') => {
         try {
@@ -29,7 +29,7 @@ export function LandingPage() {
 
     useEffect(() => {
         fetchPosts(order);
-    }, [order]); // Dependência para refazer a requisição quando a ordem mudar
+    }, [order]); 
 
     const handleOrderChange = () => {
         setOrder((prevOrder) => (prevOrder === 'default' ? 'cron' : 'default'));
@@ -46,7 +46,7 @@ export function LandingPage() {
     return (
         <>           
             <Button onClick={handleOrderChange} className='Button-order'>Ordenar por ordem cronológica</Button>
-            <main>
+            <main className='posts-container'>
                 {posts.map((p) => (
                     <Post post={p} key={p.id} />
                 ))}
