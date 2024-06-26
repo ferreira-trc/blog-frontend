@@ -19,8 +19,8 @@
 
 .lp-section-author {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: left;
+    align-items: start;
     margin-bottom: 1rem;
 }
 
@@ -51,11 +51,14 @@
     color: gray;
 }
 
-.lp-body {
+.lp-body {    
+    display: flex;
+    justify-content: center;
     margin-bottom: 1rem;
 }
 
 .lp-body p {
+    
     color: black;
     line-height: 1.5;
 }
