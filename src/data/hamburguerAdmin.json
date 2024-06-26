@@ -3,15 +3,26 @@
         "name": "Home",
         "url": "/home"
     },
-
+    
+    {
+        "name": "My Profile",
+        "url": "/myprofile"
+    },
+    
     {
         "name": "All Post",
         "url": "/allpost"
     },
     
     {
-        "name": "My Profile",
-        "url": "/myprofile"
+        "name": "New Post",
+        "url": "/newpost"
+    },
+    
+    
+    {
+        "name": "Login",
+        "url": "/login"
     },
 
     {

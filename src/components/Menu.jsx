@@ -1,5 +1,5 @@
 import { Navlink } from "./NavLink"
-import links from "../data/hamburguer.json"
+import links from "../data/hamburguerAdmin.json"
 
 export function Menu({navClass, ulClass, clas}) {
 
