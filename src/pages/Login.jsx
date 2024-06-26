@@ -7,6 +7,9 @@ export function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  console.log("user:" + userName)
+  console.log("password:" + password)
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
@@ -14,17 +17,19 @@ export function Login() {
     try {
       const response = await fetch('http://127.0.0.1:8080/auth/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userName, password })
+        headers: { 'Content-Type': 'application/json'},
+        body: JSON.stringify({ 'login' : userName, password })
       });
+      
       const data = await response.json();
       if (response.ok) {
         console.log('Login bem-sucedido', data);
-        // Armazene o token ou redirecione o usuário
+        localStorage.setItem("token", data.token);
       } else {
         setError(data.message || 'Erro no login');
       }
     } catch (error) {
+      console.log(userName);
       setError('Erro de rede ou servidor indisponível');
     }
   };
