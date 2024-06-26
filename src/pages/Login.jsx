@@ -13,7 +13,7 @@ export function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-    // Aqui você faria a requisição para o backend
+    
     try {
       const response = await fetch('http://127.0.0.1:8080/auth/login', {
         method: 'POST',
@@ -24,6 +24,7 @@ export function Login() {
       const data = await response.json();
       if (response.ok) {
         console.log('Login bem-sucedido', data);
+        localStorage.setItem("id", data.id);
         localStorage.setItem("token", data.token);
       } else {
         setError(data.message || 'Erro no login');
