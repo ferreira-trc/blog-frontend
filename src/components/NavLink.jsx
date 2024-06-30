@@ -1,7 +1,7 @@
-export function Navlink({url, name, clas}) {
+export function Navlink({url, name, className}) {
     return (
         <>
-          <li className={clas}><a href={url}>{name}</a></li>  
+          <li className={className}><a href={url}>{name}</a></li>  
         </>
     )
 }

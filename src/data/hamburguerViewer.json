@@ -1,0 +1,16 @@
+[       
+    {
+        "name": "All Post",
+        "url": "/allpost"
+    },   
+    
+    {
+        "name": "Login",
+        "url": "/login"
+    },
+
+    {
+        "name": "Register",
+        "url": "/register"
+    }
+]

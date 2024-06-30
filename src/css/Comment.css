@@ -1,0 +1,92 @@
+/* post.css */
+
+.p-div-comment-form {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-text-area {
+    width: 390%;    
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none; /* Permite que o usuário redimensione verticalmente */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.p-button-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.p-button-submit:hover {
+    background-color: #45a049;
+}
+
+.p-section-toggle-comments {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.p-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.p-button:hover {
+    background-color: #007BB5;
+}
+
+.p-section-comments {
+    margin-top: 1rem;
+}
+
+.p-section-comments h4 {
+    margin-bottom: 0.5rem;
+}
+
+.p-section-comments ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.p-section-comments li {
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.p-section-comments section h6 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.p-section-comments section p {
+    margin: 0.5rem 0 0;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+}

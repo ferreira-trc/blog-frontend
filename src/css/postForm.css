@@ -8,7 +8,7 @@
     border-radius: 1rem;
     border: 1px solid black;
     background-color: white;
-    width: 60%; /* Ajuste conforme necessário */
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -43,6 +43,7 @@
     border-radius: 0.5rem;
     font-size: 1rem;
     box-sizing: border-box;
+    resize: none;
 }
 
 .post-form-container button {

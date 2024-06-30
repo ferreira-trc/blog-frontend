@@ -1,15 +1,14 @@
 import { Navlink } from "./NavLink"
-import links from "../data/hamburguerAdmin.json"
 
-export function Menu({navClass, ulClass, clas}) {
+export function Menu({navClassName, ulClassName, className, links}) {
 
     
     return (
         <>
-            <nav className={navClass}>
-                <ul className={ulClass}>
+            <nav className={navClassName}>
+                <ul className={ulClassName}>
                     {links.map((link) => (
-                        <Navlink url={link.url} name={link.name} clas={clas}/>
+                        <Navlink url={link.url} name={link.name} className={className}/>
                         ))
                     }                                       
                 </ul>

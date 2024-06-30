@@ -18,12 +18,11 @@
         "name": "New Post",
         "url": "/newpost"
     },
-    
-    
+
     {
-        "name": "Login",
-        "url": "/login"
-    },
+        "name": "Admin",
+        "url": "/admin"
+    },     
 
     {
         "name": "Logout",

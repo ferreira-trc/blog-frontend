@@ -1,22 +1,22 @@
-.login-container {
+.register-container {
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     justify-content: center;
     height: 100vh;
     font-family: var(--header-font-family);
     border: 1rem;
 }
 
-.login-container h2 {
+.register-container h2 {
     color: green;
     margin-bottom: 1.5rem;
 }
 
-.login-container form {
+.register-container form {
     width: 15rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     align-items: center;
     background-color: white;
     padding: 2rem;
@@ -25,7 +25,7 @@
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
-.login-container form div {
+.register-container form div {
     margin-bottom: 1rem;
     width: 100%;
     display: flex;
@@ -33,24 +33,29 @@
     align-items: center;
 }
 
-.login-container form div label {
+.register-container form div label {
     margin-bottom: 0.5rem;
-    color: black;
+    color: black;    
 }
 
-.login-container form div input {
+.register-container form div input {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid black;
     border-radius: 0.5rem;
 }
 
-.login-container form .error {
+.register-container form .error {
     color: red;
     margin-bottom: 1rem;
 }
 
-.login-container form button {
+.register-container form .success {
+    color: green;
+    margin-bottom: 1rem;
+}
+
+.register-container form button {
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 0.5rem;
@@ -59,6 +64,7 @@
     cursor: pointer;
 }
 
-.login-container form button:hover {
+.register-container form button:hover {
     background-color: #429bfa;
 }
+

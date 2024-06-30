@@ -1,24 +1,84 @@
-.user-profile {    
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
+.user-profile {       
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.user-change-password {    
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.user-change-password form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-change-password form > div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-change-password label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.user-change-password input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;  
+}
+
+.user-profile h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.user-change-password h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.user-profile div {
+  margin-bottom: 0.5rem;
+}
+
+.user-profile strong {
+  display: inline-block;
+  width: 100px;
+}
+
+.change-password-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;   
   
-  .user-profile h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .user-profile div {
-    margin-bottom: 0.5rem;
-  }
-  
-  .user-profile strong {
-    display: inline-block;
-    width: 100px;
-  }
+}
+
+.change-password-button:hover {
+  background-color: #429bfa;
+
+}
   

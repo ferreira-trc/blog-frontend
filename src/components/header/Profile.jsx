@@ -1,11 +1,11 @@
 
-export function Profile({onClick}) {
+export function Profile({userName}) {
 
     
     return (
         <>
-            <div className="profile">                             
-                <button className='bottonProfile' onClick={onClick}></button>                                
+            <div className="profile">                 
+                <h4>{userName}</h4>
             </div>            
         </>
     );

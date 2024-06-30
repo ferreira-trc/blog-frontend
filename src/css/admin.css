@@ -1,0 +1,59 @@
+.admin-users {
+  margin: 20px;
+}
+
+.admin-users table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-users th, .admin-users td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.admin-users th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.admin-users tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-users tr:hover {
+  background-color: #ddd;
+}
+
+.admin-users button {
+  margin-right: 5px;
+}
+
+.promote-user-button,
+.delete-user-button{
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;  
+}
+
+.promote-user-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.promote-user-button:hover {
+  background-color: #429bfa;
+}
+
+.delete-user-button {
+  background-color: rgb(201, 4, 4);
+  color: white;
+}
+
+.delete-user-button:hover {
+  background-color: rgb(243, 4, 4);  
+}
+  
